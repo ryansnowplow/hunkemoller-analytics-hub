@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+:root {
+  --hkm-primary: #6A0438;
+  --hkm-blush: #F2E3E3;
+  --hkm-gold: #CCB497;
+  --hkm-mauve: #B0798E;
+  --hkm-bg: #FBF7F7;
+  --hkm-white: #FFFFFF;
+  --hkm-text: #6A0438;
+  --hkm-text-light: #8C4A6A;
+  --hkm-text-muted: #A67D8F;
+  --hkm-border: #E8D5D5;
+  --hkm-border-light: #F0E0E0;
+  --hkm-code-bg: #2D1A24;
+  --hkm-success: #4A7C59;
+  --hkm-warning: #C4883A;
+  --hkm-nav-text: #351C22;
+  --hkm-nav-active: #A4105B;
+}
+
+@theme inline {
+  --color-hkm-primary: var(--hkm-primary);
+  --color-hkm-blush: var(--hkm-blush);
+  --color-hkm-gold: var(--hkm-gold);
+  --color-hkm-mauve: var(--hkm-mauve);
+  --color-hkm-bg: var(--hkm-bg);
+  --color-hkm-white: var(--hkm-white);
+  --color-hkm-text: var(--hkm-text);
+  --color-hkm-text-light: var(--hkm-text-light);
+  --color-hkm-text-muted: var(--hkm-text-muted);
+  --color-hkm-border: var(--hkm-border);
+  --color-hkm-border-light: var(--hkm-border-light);
+  --color-hkm-code-bg: var(--hkm-code-bg);
+  --color-hkm-success: var(--hkm-success);
+  --color-hkm-warning: var(--hkm-warning);
+  --color-hkm-nav-text: var(--hkm-nav-text);
+  --color-hkm-nav-active: var(--hkm-nav-active);
+  --font-sans: 'Nunito Sans', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+body {
+  background: var(--hkm-bg);
+  color: var(--hkm-text);
+  font-family: var(--font-sans);
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--hkm-blush);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--hkm-gold);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--hkm-mauve);
+}
+
+/* Code block styling */
+pre {
+  background: var(--hkm-code-bg);
+  border-radius: 8px;
+  padding: 1rem;
+  overflow-x: auto;
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  line-height: 1.7;
+  color: #F2E3E3;
+}
+
+code {
+  font-family: var(--font-mono);
+  font-size: 0.875em;
+  background: var(--hkm-blush);
+  color: var(--hkm-primary);
+  padding: 0.125rem 0.375rem;
+  border-radius: 4px;
+}
+
+pre code {
+  background: none;
+  color: inherit;
+  padding: 0;
+}
